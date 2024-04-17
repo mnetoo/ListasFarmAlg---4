@@ -1,0 +1,44 @@
+program lista4Ex006;
+
+var     
+    
+    n, pe, cont: longint;
+    p, s: longint;
+
+begin
+
+	read (n);
+	pe:=0;
+	p:=2;
+	s:=0;
+
+	    while (pe<n) do
+	    begin
+		    
+		    cont:=1;
+
+		        while (cont<p) do
+		        begin
+			        
+			        if ((p mod cont)=0) then 
+			        
+			        s:=s+cont;
+			    
+			    cont:=cont+1;
+
+		        
+		        end;	
+		
+		    if (s=p) then begin 
+			
+			    write (p, ' ');
+			    pe:=pe+1;
+		
+		    end;
+		
+		    p:=p+1;
+		    s:=0;
+		    
+	    end;
+	    
+end.
