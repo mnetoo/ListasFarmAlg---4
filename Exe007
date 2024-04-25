@@ -1,0 +1,30 @@
+program cortabuleiro;
+
+var
+
+    l, c: integer;
+
+begin
+    
+        read(l, c);
+
+            if (l mod 2 = 0) then
+            begin       
+                    if (c mod 2 = 0) then   
+                        writeln('BRANCA')
+                    else
+                        writeln('PRETA')
+                    
+            end
+
+            else
+            begin
+
+                if (c mod 2 = 0) then
+                    write('PRETA')
+                else
+                    writeln('BRANCA');
+
+            end;
+
+end.
