@@ -1,0 +1,27 @@
+program sequencia;
+
+var
+
+    num, num2, contnum, soma: integer;
+
+begin
+
+        contnum:= 2;
+        read(num2, num);
+        soma:= num2;
+
+            while (num <> num2 * 2) and (num <> num2/2) do
+            begin
+
+                soma:= soma + num;
+                num2:= num;    
+                contnum:= contnum + 1;
+                read(num);
+
+            end;
+
+        soma:= soma + num;
+
+        write(contnum, ' ', soma, ' ', num2, ' ', num);
+
+end.
